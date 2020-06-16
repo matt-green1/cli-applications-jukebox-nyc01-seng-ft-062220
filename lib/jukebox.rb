@@ -46,18 +46,20 @@ end
 
 def run(songs_array)
   command_input = ""
-  unless command_input == "exit"
+  until command_input == "exit"
   puts "Please enter a command:"
   command_input = gets.strip
     if command_input == "help"
       help
     elsif command_input == "list"
-      list(songs)
+      list(songs_array)
     elsif command_input == "play"
-      play(songs)
+      play(songs_array)
+    elsif command_input == "exit"
+      exit_jukebox
     end
   end
-  exit_jukebox
+  #exit_jukebox
 end
 
 
