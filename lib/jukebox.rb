@@ -55,6 +55,7 @@ def run(songs_array)
       list(songs_array)
     elsif command_input == "play"
       play(songs_array)
+    #this wo
     #elsif command_input == "exit"
      # exit_jukebox
     end
