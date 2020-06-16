@@ -55,11 +55,11 @@ def run(songs_array)
       list(songs_array)
     elsif command_input == "play"
       play(songs_array)
-    elsif command_input == "exit"
-      exit_jukebox
+    #elsif command_input == "exit"
+     # exit_jukebox
     end
   end
-  #exit_jukebox
+  exit_jukebox
 end
 
 
